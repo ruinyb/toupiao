@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>新芭梅缇形象选秀</title>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/iconfont.css" rel="stylesheet">
+    <link href="css/basic.css" rel="stylesheet">
+</head>
+
+<body id="myBody" style="padding-bottom: 17%;width:95%;background: #eee">
+
+
+<div id="jiazai">
+    <img src="image/4.gif" />
+</div>
+<div id="erweima">
+    <img src="image/5.jpg" class="img-responsive" style=" margin:50% auto;width: 40%;">
+</div>
+<div class="apply_title">
+    活动报名处
+</div>
+
+<form action="" method="">
+    <input type="text" id="name" placeholder="请输入您的姓名" maxlength="10">
+    <input onkeyup="this.value=this.value.replace(/\D/g,'')" type="text" id="age" placeholder="请输入您的年龄"  maxlength="2">
+    <input type="text" id="address" placeholder="请输入常住地址">
+    <input onkeyup="this.value=this.value.replace(/\D/g,'')" type="text" id="phone" placeholder="请输入您的手机号码" maxlength="11">
+</form>
+
+<p class="phone_tip">
+    * 请输入正确的手机号码，方便联系您
+</p>
+<!--     <input type="file"> -->
+<div class="upload">
+    <p class="upload_tip">
+        上传照片（1-4）张（默认第一张为封面图）
+    </p>
+    <div class="upload_img">
+        <div class="row">
+            <div class="col-xs-3 list-item">
+                <form action="" id="form1">
+                    <p id="dd">
+                        <span class="line_1"></span>
+                        <span class="line_2"></span>
+                        <input name="photo" multiple value="" id="btn_upload" class="btn_upload" type="file">
+                        <img src="" alt="">
+                    </p>
+                </form>
+            </div>
+            <div class="col-xs-3 list-item">
+                <form action="" id="form2">
+                    <p id="dd">
+                        <span class="line_1"></span>
+                        <span class="line_2"></span>
+                        <input name="photo" multiple value="" id="btn_upload" class="btn_upload" type="file">
+                        <img src="" alt="">
+                    </p>
+                </form>
+            </div>
+            <div class="col-xs-3 list-item">
+                <form action="" id="form3">
+                    <p id="dd">
+                        <span class="line_1"></span>
+                        <span class="line_2"></span>
+                        <input name="photo" multiple value="" id="btn_upload" class="btn_upload" type="file">
+                        <img src="" alt="">
+                    </p>
+                </form>
+            </div>
+            <div class="col-xs-3 list-item last-one">
+                <form action="" id="form4">
+                    <p id="dd">
+                        <span class="line_1"></span>
+                        <span class="line_2"></span>
+                        <input name="photo" multiple value="" id="btn_upload" class="btn_upload" type="file">
+                        <img src="" alt="">
+                    </p>
+                </form>
+            </div>
+        </div>       
+    </div>
+</div>
+<div class="messages">
+    <textarea class="textarea-max" maxlength="50" placeholder="您可以添加描述~" onblur="if(this.placeholder==''){this.placeholder='您可以在为您的宝宝添加描述~'}" onfocus="if(this.placeholder=='您可以在为您的宝宝添加描述~'){this.placeholder=''}"></textarea>
+    <p class="area">*描述请不要超过50字。</p>
+</div>
+
+
+<div class="bt">
+    <button type="button" class="btn sub-btn" style="position: relative;
+    left: -2%;">确认提交</button>
+     <a href="index.html" style="">
+     <button type="button" class="btn" style="background: #fff;color: #fd4140">返回首页</button>
+    </a>
+</div>
+
+
+<div class="footer text-center change" style="    z-index: 99;
+    position: fixed;
+    bottom: 0px;
+    height: auto;
+    background: #363636;
+    padding: 4px 0;
+    margin: 0 -10px;
+    width: 100%;
+    border-top: 1px solid #ddd;">
+	<div class="row">
+		<div class="col-xs-3 list-item">
+			<a href="index.html">
+				<span class="iconfont icon-home"></span>
+				<p>首页</p>
+			</a>
+		</div>
+		<div class="col-xs-3  list-item">
+			<a href="apply.html" class="color">
+				<span class="iconfont icon-apply"></span>
+				<p>报名</p>
+			</a>
+		</div>
+		<div class="col-xs-3  list-item">
+			<a href="line.html">
+				<span class="iconfont icon-line"></span>
+				<p>排行</p>
+			</a>
+		</div>
+		<div class="col-xs-3  list-item">
+			<a href="explain.html">
+                <span class="iconfont icon-explain">
+
+                </span>
+				<p>规则</p>
+			</a>
+		</div>
+	</div>
+</div>
+</body>
+</html>

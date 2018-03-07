@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>新芭梅缇形象选秀</title>
+
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/swiper.min.css" rel="stylesheet">
+	<link href="css/iconfont.css" rel="stylesheet">
+	<link href="css/basic.css" rel="stylesheet">
+</head>
+
+<body id="myBody" style="background: #eee">
+
+<div class="search" style="width: 100%;">
+	<div class="input-group" style="margin: 0 auto;
+    padding: 2%;
+    background: #333;
+    width: 100%;">
+		<input type="text" class="form-control" style="z-index: 0; border-radius: 8px;height: 36px;" placeholder="请输入你要的姓名">
+	</div>
+</div>
+<div class="banner">
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+			<volist name="act.pictures" id="pictures">
+				<div class="swiper-slide"><img src="" class="img-responsive"></div>
+			</volist>
+
+		</div>
+	</div>
+</div>
+<div class="apply_vote">
+	<div class="row">
+		<div class="col-xs-6 apply" style="color:#000;">
+			<p>报名人数</p>
+			<p>100</p>
+		</div>
+		<div class="col-xs-6 vote">
+			<p>投票人数</p>
+			<p>100</p>
+		</div>
+	</div>
+</div>
+<ul class="three">
+	<li><img src="image/1.jpg" style="margin-left: 0.5%" />&nbsp 新芭梅缇形象秀</li>
+	<li><img src="image/2.jpg" style="margin-left: 0.5%" />&nbsp 截止日期：11月8日-11月21日</li>
+	<a href="explain.html" style="color: #989898;text-decoration: none;"><li><img src="image/3.jpg" style="margin-left: 2px" />&nbsp 活动介绍<span style="    float: right;
+    font-size: 23px;
+    margin-top: 8px;" class="glyphicon glyphicon-menu-right"></span></li></a>
+</ul>
+<div class="grid_match">
+	<ul class="breadcrumb">
+		<li class="col-xs-6" style="    padding: 20px;
+    margin: 2px;">最新参与</li>
+		<li class="col-xs-6" style="    padding: 20px;
+    margin: 2px;">人气选手</li>
+		<!-- <li><a href="{:U('Index/index?id='.$act[id]).'/limit/100'}">TOP100</a></li> -->
+	</ul>
+</div>
+<div class="main">
+	<div class="grid_people">
+		<div class="row">
+			<volist name="apply" id="apply" key="k">
+				<div class="col-xs-6">
+					<div class="thumbnail">
+						<a href="player.html"><img src="image/p_1.jpg"></a>
+						<div class="caption">
+							<p>199票</p>
+							<span class="circle">
+                                <span id="heart" class="glyphicon glyphicon-heart"></span><span id="toupiao">投票</span>
+                            </span>
+						</div>
+						<span class="num">1号<span style="margin-left: 15%">崔姬</span></span>
+					</div>
+				</div>
+				<div class="col-xs-6">
+					<div class="thumbnail">
+						<a href="player.html"><img src="image/e.jpg"></a>
+						<div class="caption">
+							<p>180票</p>
+							<span class="circle">
+                                <span id="heart" class="glyphicon glyphicon-heart"></span><span id="toupiao">投票</span>
+                            </span>
+						</div>
+						<span class="num">2号<span style="margin-left: 15%">简·诗琳普顿</span></span>
+					</div>
+				</div>
+				<div class="col-xs-6">
+					<div class="thumbnail">
+						<a href="player.html"><img src="image/q.jpg"></a>
+						<div class="caption">
+							<p>156票</p>
+							<span class="circle">
+                                <span id="heart" class="glyphicon glyphicon-heart"></span><span id="toupiao">投票</span>
+                            </span>
+						</div>
+						<span class="num">3号<span style="margin-left: 15%">凯特·摩丝</span></span>
+					</div>
+				</div>
+				<div class="col-xs-6">
+					<div class="thumbnail">
+						<a href="player.html"><img src="image/w.jpg"></a>
+						<div class="caption">
+							<p>133票</p>
+							<span class="circle">
+                                <span id="heart" class="glyphicon glyphicon-heart"></span><span id="toupiao">投票</span>
+                            </span>
+						</div>
+						<span class="num">4号<span style="margin-left: 15%">娜奥米·坎贝尔</span></span>
+					</div>
+				</div>
+				<div class="col-xs-6">
+					<div class="thumbnail">
+						<a href="player.html"><img src="image/r.jpg"></a>
+						<div class="caption">
+							<p>120票</p>
+							<span class="circle">
+                                <span id="heart" class="glyphicon glyphicon-heart"></span><span id="toupiao">投票</span>
+                            </span>
+						</div>
+						<span class="num">5号<span style="margin-left: 15%">凯伦·艾臣</span></span>
+					</div>
+				</div>
+
+			</volist>
+		</div>
+	</div>
+</div>
+<div class="footer text-center">
+	<div class="row">
+		<div class="col-xs-3 list-item">
+			<a href="index.html" class="color">
+				<span class="iconfont icon-home "></span>
+				<p>首页</p>
+			</a>
+		</div>
+		<div class="col-xs-3  list-item">
+			<a href="apply.html">
+				<span class="iconfont icon-apply"></span>
+				<p>报名</p>
+			</a>
+		</div>
+		<div class="col-xs-3  list-item">
+			<a href="line.html">
+				<span class="iconfont icon-line"></span>
+				<p>排行</p>
+			</a>
+		</div>
+		<div class="col-xs-3  list-item">
+			<a href="explain.html">
+                <span class="iconfont icon-explain">
+
+                </span>
+				<p>规则</p>
+			</a>
+		</div>
+	</div>
+</div>
+</body>
+</html>
